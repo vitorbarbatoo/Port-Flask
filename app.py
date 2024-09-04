@@ -1,4 +1,10 @@
 from flask import Flask, render_template
+from waitress import serve
+from app import app  # Substitua 'app' pelo nome do seu aplicativo Flask
+
+if __name__ == '__main__':
+    serve(app, host='0.0.0.0', port=8080)
+
 
 app = Flask(__name__)
 
