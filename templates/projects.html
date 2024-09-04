@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="project-title">Projects</h1>
+<div class="project-gallery">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/projetcs.css') }}">
+    <div class="project">
+        <img src="{{ url_for('static', filename='img/projetor23.jpg') }}" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Project R23: Programmed in C++</p>
+        <a href="https://github.com/vitorbarbatoo">View on GitHub</a>
+    </div>
+    <div class="project">
+        <img src="{{ url_for('static', filename='img/projetocasa.jpeg') }}" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Smart Home Project: Programmed in C++ and IOT system</p>
+        <a href="https://github.com/vitorbarbatoo">View on GitHub</a>
+    </div>
+    <div class="project">
+        <img src="{{ url_for('static', filename='img/elephant.png') }}" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>Projeto Elephant: Develop an E-commerce system</p>
+        <a href="https://github.com/vitorbarbatoo">View on GitHub</a>
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="contact-title">Contact</h1>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+<div class="contact-container">
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>You can also find me at:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/vitor-lopes-a53b562b2/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/vitorbarbatoo" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            <!-- Adicione mais links de contato se desejar -->
+        </ul>
+    </div>
+</div>
+{% endblock %}

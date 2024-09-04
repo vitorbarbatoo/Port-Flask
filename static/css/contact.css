@@ -1,0 +1,97 @@
+
+* {
+    margin: 0; /* Remove margens de todos os elementos */
+    padding: 0; /* Remove preenchimento interno de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura e altura */
+}
+
+html, body {
+    height: 100%; /* Garante que a altura do body e html seja 100% da viewport */
+    margin: 0; /* Remove qualquer margem padrão */
+}
+
+
+/* Estilo para a seção de contato */
+.contact-title {
+    font-family: 'Arial', sans-serif; /* Fonte do título */
+    color: #333; /* Cor do texto */
+    font-size: 2.5em; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra no texto */
+}
+.contact-title::after {
+    content: "";
+    display: block;
+    width: 80px; /* Ajuste a largura conforme necessário */
+    height: 4px; /* Ajuste a altura conforme necessário */
+    background-color: #007bff; /* Cor do traço */
+    margin: 10px auto 0; /* Alinha o traço no centro e adiciona margem superior */
+    border-radius: 2px; /* Adiciona bordas arredondadas ao traço */
+}
+
+.contact-title:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+    
+}
+
+/* Estilo para o contêiner da seção de contato */
+.contact-container {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Distribui espaço entre o formulário e as informações de contato */
+    gap: 20px; /* Espaço entre o formulário e as informações de contato */
+    padding: 20px; /* Padding ao redor do contêiner */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+}
+
+
+
+/* Estilo para as informações de contato */
+.contact-info {
+    flex: 1; /* Faz com que as informações de contato ocupem a maior parte do contêiner */
+    max-width: 400px; /* Largura máxima das informações de contato */
+    background-color: #f9f9f9; /* Cor de fundo das informações de contato */
+    padding: 20px; /* Padding interno das informações de contato */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor das informações de contato */
+}
+
+.contact-info h2 {
+    font-family: 'Arial', sans-serif; /* Fonte do título */
+    color: #333; /* Cor do texto */
+    font-size: 2em; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.contact-info p {
+    font-family: 'Arial', sans-serif; /* Fonte do parágrafo */
+    color: #666; /* Cor do texto */
+    font-size: 1em; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+}
+
+.contact-info ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding da lista */
+    
+}
+
+.contact-info li {
+    margin-bottom: 15px; /* Espaço abaixo de cada item da lista */
+}
+
+.contact-info a {
+    color: #007bff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Texto em negrito */
+    display: flex; /* Flexbox para alinhar ícone e texto */
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
+}
+
+.contact-info a i {
+    margin-right: 8px; /* Espaço entre ícone e texto */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

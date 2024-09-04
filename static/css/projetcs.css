@@ -1,0 +1,102 @@
+
+* {
+    margin: 0; /* Remove margens de todos os elementos */
+    padding: 0; /* Remove preenchimento interno de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura e altura */
+}
+
+html, body {
+    height: 100%; /* Garante que a altura do body e html seja 100% da viewport */
+    margin: 0; /* Remove qualquer margem padrão */
+}
+
+
+.project img {
+    width: 100%; /* Ajusta a largura da imagem para preencher o contêiner pai */
+    height: auto; /* Mantém a proporção original da imagem */
+    max-width: 400px; /* Define uma largura máxima para a imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem (opcional) */
+}
+
+/* Estiliza a galeria de projetos */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os projetos se movam para a linha seguinte se necessário */
+    gap: 20px; /* Adiciona espaço entre os projetos */
+    justify-content: center; /* Centraliza os projetos horizontalmente */
+}
+
+/* Estiliza cada projeto */
+.project {
+    width: 100%;
+    max-width: 300px; /* Define a largura máxima do projeto */
+    border: 1px solid #ddd; /* Adiciona uma borda ao projeto */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    overflow: hidden; /* Garante que o conteúdo não saia das bordas arredondadas */
+    background-color: #fff; /* Cor de fundo do projeto */
+    text-align: center; /* Centraliza o texto no projeto */
+    padding: 10px; /* Adiciona espaço interno ao projeto */
+}
+
+.project img {
+    width: 100%; /* Ajusta a largura da imagem para preencher o contêiner do projeto */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block; /* Remove o espaço abaixo da imagem */
+    border-bottom: 1px solid #ddd; /* Adiciona uma borda abaixo da imagem */
+}
+
+.project h3 {
+    margin: 10px 0 5px; /* Ajusta o espaçamento ao redor do título do projeto */
+}
+
+.project h1 {
+    margin: 10px 0 5px; /* Ajusta o espaçamento ao redor do título do projeto */
+    
+}
+
+.project p {
+    margin: 0 0 10px; /* Ajusta o espaçamento ao redor da descrição do projeto */
+}
+
+.project a {
+    color: #007bff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Torna o texto do link em negrito */
+}
+
+.project a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse sobre o link */
+}
+
+.project img {
+    width: 300px; /* Define uma largura fixa para a imagem */
+    height: 200px; /* Define uma altura fixa para a imagem */
+    object-fit: cover; /* Faz com que a imagem preencha o contêiner sem distorcer */
+}
+
+/* Estiliza o título da seção de projetos */
+.project-title {
+    font-family: 'Arial', sans-serif; /* Define a fonte do título */
+    color: #333; /* Define a cor do texto */
+    font-size: 2.5em; /* Define o tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+    padding-bottom: 10px; /* Adiciona espaço abaixo da linha */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao texto */
+    position: relative; /* Permite o uso de ::after para o traço */
+}
+
+/* Adiciona o traço decorativo abaixo do título */
+.project-title::after {
+    content: "";
+    display: block;
+    width: 80px; /* Ajuste a largura conforme necessário */
+    height: 4px; /* Ajuste a altura conforme necessário */
+    background-color: #007bff; /* Cor do traço */
+    margin: 10px auto 0; /* Alinha o traço no centro e adiciona margem superior */
+    border-radius: 2px; /* Adiciona bordas arredondadas ao traço */
+}
+
+.project-title:hover {
+    color: #007bff; /* Altera a cor do título quando o mouse passa sobre ele */
+}

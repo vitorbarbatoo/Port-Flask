@@ -1,0 +1,89 @@
+
+* {
+    margin: 0; /* Remove margens de todos os elementos */
+    padding: 0; /* Remove preenchimento interno de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura e altura */
+}
+
+html, body {
+    height: 100%; /* Garante que a altura do body e html seja 100% da viewport */
+    margin: 0; /* Remove qualquer margem padrão */
+}
+
+.base {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden; /* Garante que nenhum conteúdo exceda o contêiner */
+}
+
+.base nav ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0; /* Remove a margem superior da lista de navegação */
+    background-color: #0f3550; /* Define a cor de fundo do menu de navegação */
+}
+
+/* Outros estilos permanecem os mesmos */
+
+
+.base nav ul li {
+    display: inline; /* Exibe os itens da lista de navegação na mesma linha (em linha) */
+    padding: 10px; /* Adiciona um preenchimento interno de 10px ao redor de cada item de navegação */
+    margin-right: 10px; /* Adiciona uma margem direita de 10px entre os itens de navegação */
+}
+
+.base nav ul li a {
+    color: #f0f0f0; /* Define a cor do texto dos links de navegação como cinza claro */
+    text-decoration: none; /* Remove o sublinhado dos links de navegação */
+}
+
+/* Adiciona espaço entre o ícone e o texto no menu de navegação */
+.base nav ul li a i {
+    margin-right: 8px; /* Adiciona um espaço entre o ícone e o texto */
+}
+
+.base footer {
+    background-color: #002035; /* Define a cor de fundo do rodapé */
+    padding: 30px; /* Adiciona um preenchimento interno ao redor do conteúdo do rodapé */
+    text-align: center; /* Centraliza o texto e outros elementos dentro do rodapé */
+    position: fixed; /* Fixa o rodapé na parte inferior da página */
+    width: 100%; /* Faz com que o rodapé ocupe 100% da largura da página */
+    bottom: 0; /* Alinha o rodapé à parte inferior da janela */
+    color: rgb(255, 255, 255); /* Define a cor do texto no rodapé como branco */
+    
+    
+    
+}
+
+.base footer ul {
+    list-style-type: none; /* Remove os marcadores de lista padrão (como pontos) */
+    padding: 0; /* Remove o preenchimento interno da lista */
+    margin: 0; /* Remove a margem externa da lista */
+    
+}
+
+.base footer ul li {
+    display: inline; /* Exibe os itens da lista na mesma linha (em linha) */
+    margin: 0 12px; /* Adiciona uma margem horizontal de 10px em ambos os lados dos itens da lista */
+
+}
+
+.base footer a {
+    color: white; /* Define a cor do texto dos links como branca */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    
+}
+
+.base footer a:hover {
+    color: #f0f0f0; /* Altera a cor dos links ao passar o mouse (opcional) */
+}
+
+.base form {
+    max-width: 100px; /* Define a largura máxima do formulário como 100 pixels */
+    padding: 20px; /* Adiciona um preenchimento interno de 20 pixels ao redor do conteúdo do formulário */
+    border: 1px solid #ffffff; /* Adiciona uma borda sólida de 1 pixel ao redor do formulário com cor branca */
+    border-radius: 8px; /* Adiciona bordas arredondadas com um raio de 8 pixels */
+}

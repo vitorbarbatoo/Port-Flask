@@ -1,0 +1,108 @@
+
+* {
+    margin: 0; /* Remove margens de todos os elementos */
+    padding: 0; /* Remove preenchimento interno de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura e altura */
+}
+
+html, body {
+    height: 100%; /* Garante que a altura do body e html seja 100% da viewport */
+    margin: 0; /* Remove qualquer margem padrão */
+}
+
+
+/* Estilo geral para a seção "Sobre Mim" */
+.about-section {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+/* Estilo para o título principal */
+.about-section h1 {
+    font-size: 2.8em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+
+/* Adiciona uma linha decorativa abaixo do título */
+.about-section h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    
+
+}
+
+.about-section h1:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+    
+}
+
+/* Estilo para os subtítulos */
+.about-section h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin-top: 30px;
+    font-weight: 600;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+/* Estilo para o parágrafo */
+.about-section p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+/* Estilo para as listas */
+.about-section ul {
+    font-family: 'Arial', sans-serif;
+    list-style-type: disc;
+    padding: 0 20px;
+    margin: 20px auto;
+}
+
+/* Estilo para os itens da lista */
+.about-section ul li {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #ffffff;
+    transition: background-color 0.4s, transform 0.4s;
+    position: relative;
+}
+
+/* Efeito de hover para os itens da lista */
+.about-section ul li:hover {
+    background-color: #ffffff;
+    transform: translateX(20px);
+}
+
+/* Remove a borda inferior do último item da lista */
+.about-section ul li:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+<div class="home-page">
+    <h1>Welcome to My Flask Portfolio!</h1>
+    <p>Hello ! I'm a developer with little experience, but I'm studying a lot and acquiring a lot of knowledge, this Portfolio was made in Flask, Python, HTML, CSS explore my projects if you're interested.</p>
+    <img src="{{ url_for('static', filename='img/helloworld.jpg') }}" alt="Imagem de fundo">
+</div>
+{% endblock %}
